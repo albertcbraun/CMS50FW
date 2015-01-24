@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CMS50FWLib Test App</string>
+    <string name="action_settings">Settings</string>
+    <string name="connectCMS50FW_button_text">Connect to CMS50FW</string>
+    <string name="message_window_label">Messages:</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="clear_button_text">Clear Log</string>
+    <string name="stopCMS50FW_button_text">Stop Data</string>
+    <string name="startCMS50FW_button_text">Start Data</string>
+    <string name="connect_button_text">Connect</string>
+    <string name="connect_button_label">Please connect only when CMS50FW is wireless enabled and within Bluetooth range.</string>
+    <string name="not_available">N/A</string>
+    <string name="minimum_spo2_label_text">Minimum Allowed SpO2 Percentage:</string>
+</resources>
