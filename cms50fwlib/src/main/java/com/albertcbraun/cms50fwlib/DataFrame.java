@@ -39,7 +39,7 @@ public class DataFrame {
 
     @Override
     public String toString() {
-        return String.format("time:%s, spo2Percentage:%d, pulseRate:%d, pulseWaveForm:%d, pulseIntensity:%d, isFingerOutOfSleeve:%b",
+        return Util.formatString("time:%s, spo2Percentage:%d, pulseRate:%d, pulseWaveForm:%d, pulseIntensity:%d, isFingerOutOfSleeve:%b",
                 time, spo2Percentage, pulseRate, pulseWaveForm, pulseIntensity, isFingerOutOfSleeve);
     }
 }

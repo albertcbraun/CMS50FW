@@ -28,9 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_button_label"
         android:layout_toRightOf="@id/connect_button"
+        tools:ignore="RtlHardcoded"
         android:onClick="startData"
-        android:text="@string/startCMS50FW_button_text"
-        tools:ignore="RtlHardcoded" />
+        android:text="@string/startCMS50FW_button_text"/>
 
     <Button
         android:id="@+id/stop_reading_data_button"
@@ -38,8 +38,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_button_label"
         android:layout_toRightOf="@id/start_reading_data_button"
+        tools:ignore="RtlHardcoded"
         android:onClick="stopData"
-        android:text="@string/stopCMS50FW_button_text" />
+        android:text="@string/stopCMS50FW_button_text"/>
 
     <Button
         android:id="@+id/reset_button"
@@ -47,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_button_label"
         android:layout_toRightOf="@id/stop_reading_data_button"
+        tools:ignore="RtlHardcoded"
         android:onClick="resetState"
         android:text="@string/reset_button_text" />
 
@@ -56,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/connect_button_label"
         android:layout_toRightOf="@id/reset_button"
+        tools:ignore="RtlHardcoded"
         android:onClick="clearWindow"
         android:text="@string/clear_button_text" />
 
@@ -77,6 +80,7 @@
         android:layout_marginLeft="1sp"
         android:layout_marginTop="@dimen/top_margin"
         android:layout_toRightOf="@id/minimum_spo2_percentage_label"
+        tools:ignore="RtlHardcoded"
         android:text="@string/not_available"
         android:textSize="@dimen/standard_text_size" />
 
@@ -85,6 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/minimum_spo2_percentage_label"
+        tools:ignore="RtlHardcoded"
         android:layout_below="@id/minimum_spo2_percentage_label"
         android:orientation="horizontal" />
 
@@ -106,6 +111,7 @@
         android:layout_marginRight="30sp"
         android:layout_marginTop="@dimen/top_margin"
         android:layout_toRightOf="@id/current_time_window"
+        tools:ignore="RtlHardcoded"
         android:text="@string/not_available"
         android:textSize="@dimen/standard_text_size" />
 
@@ -116,6 +122,7 @@
         android:layout_below="@id/minimum_spo2_percentage"
         android:layout_marginTop="@dimen/top_margin"
         android:layout_toRightOf="@id/current_spo2_window"
+        tools:ignore="RtlHardcoded"
         android:text="@string/not_available"
         android:textSize="@dimen/standard_text_size" />
 

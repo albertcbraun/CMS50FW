@@ -271,9 +271,9 @@ class AndroidBluetoothConnectionComponents {
         if (objectRef != null) {
             try {
                 objectRef.close();
-                logEvent(String.format(CLOSED_FORMAT_STRING, objectName));
+                logEvent(Util.formatString(CLOSED_FORMAT_STRING, objectName));
             } catch (IOException e) {
-                Log.e(TAG, String.format(COULD_NOT_CLOSE_FORMAT_STRING, objectName), e);
+                Log.e(TAG, Util.formatString(COULD_NOT_CLOSE_FORMAT_STRING, objectName), e);
             }
         }
     }
@@ -325,7 +325,7 @@ class AndroidBluetoothConnectionComponents {
                 // Get the BluetoothDevice object from the Intent
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 // BluetoothDevice found: Name:SpO202, Address:00:0E:..., BluetoothClass:1f00
-                Log.v(TAG, String.format(BLUETOOTH_DEVICE_FOUND_FORMAT,
+                Log.v(TAG, Util.formatString(BLUETOOTH_DEVICE_FOUND_FORMAT,
                         device.getName(), device.getAddress(), device.getBluetoothClass()));
                 if (device.getName() != null && device.getName().equals(androidBluetoothDeviceName)) {
                     logEvent(CMS50FW_BLUETOOTH_DEVICE_FOUND_MESSAGE);
@@ -344,7 +344,7 @@ class AndroidBluetoothConnectionComponents {
                         logEvent(ATTEMPTING_TO_CONNECT_TO_CMS50FW_MESSAGE);
                         cms50FWConnectionListener.onConnectionAttemptInProgress();
 
-                        Log.v(TAG, String.format(RETRIEVING_UUIDS_FROM_BLUETOOTH_DEVICE_FORMAT,
+                        Log.v(TAG, Util.formatString(RETRIEVING_UUIDS_FROM_BLUETOOTH_DEVICE_FORMAT,
                                 cms50FWDevice.getName(), cms50FWDevice.getAddress(), cms50FWDevice.getBluetoothClass()));
 
                         // update the UUID with the one from the actual, physical device, if available

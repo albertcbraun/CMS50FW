@@ -23,6 +23,7 @@ import com.albertcbraun.cms50fwlib.DataFrame;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Holds the UI elements for the main CMS50FW alert functionality.
@@ -31,7 +32,7 @@ public class MainUIFragment extends Fragment {
 
     public static final String TAG = MainUIFragment.class.getSimpleName();
 
-    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss");
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss", Locale.US);
     private static final String MAXIMUM_SPO2_PERCENTAGE_MAX_VALUE_KEY_NAME = "MAXIMUM_SPO2_PERCENTAGE_MAX_VALUE_KEY_NAME";
     private static final String CURRENT_SPO2_PERCENTAGE_MAX_VALUE_KEY_NAME = "CURRENT_SPO2_PERCENTAGE_MAX_VALUE_KEY_NAME";
     private static final String BPM_STRING = " bpm";

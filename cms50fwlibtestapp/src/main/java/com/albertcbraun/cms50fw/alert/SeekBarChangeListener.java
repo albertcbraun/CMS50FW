@@ -7,6 +7,8 @@ import android.preference.PreferenceManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 /**
  * Do appropriate stuff when the user changes a SeekBar
  * <p/>
@@ -30,7 +32,7 @@ class SeekBarChangeListener implements SeekBar.OnSeekBarChangeListener {
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        companionTextView.setText(String.format("%d", progress));
+        companionTextView.setText(String.format(Locale.US, "%d", progress));
     }
 
     @Override

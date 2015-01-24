@@ -1,6 +1,7 @@
 package com.albertcbraun.cms50fwlib;
 
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 
 /**
@@ -11,7 +12,7 @@ import java.util.concurrent.ExecutorService;
  */
 class Util {
 
-    static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss");
+    static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss", Locale.US);
 
     /**
      * Verifies that the ExecutorService in question is still active, and if so,
@@ -33,6 +34,10 @@ class Util {
      */
     static void log(CMS50FWConnectionListener listener, String message) {
         listener.onLogEvent(System.currentTimeMillis(), message);
+    }
+
+    static String formatString(String format, Object... objects) {
+        return String.format(Locale.US, format, objects);
     }
 
 }

@@ -53,6 +53,6 @@ class CMS50FWConnectionLogger implements CMS50FWConnectionListener {
 
     @Override
     public void onLogEvent(long timeMs, String message) {
-        Log.v(TAG, String.format("[%s] %s", Util.DATE_FORMAT.format(new Date(timeMs)), message));
+        Log.v(TAG, Util.formatString("[%s] %s", Util.DATE_FORMAT.format(new Date(timeMs)), message));
     }
 }
