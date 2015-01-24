@@ -1,1 +1,1 @@
-include ':cms50fwtestapp', ':cms50fwlib'
+include ':cms50fwlib', ':cms50fwlibtestapp'
