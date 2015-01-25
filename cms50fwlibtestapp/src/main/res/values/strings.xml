@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CMS50FWLib Test App</string>
-    <string name="action_settings">Settings</string>
     <string name="reset_button_text">Reset</string>
     <string name="clear_button_text">Clear Log</string>
     <string name="stopCMS50FW_button_text">Stop Data</string>
