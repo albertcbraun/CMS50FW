@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CMS50FW.iml" filepath="$PROJECT_DIR$/CMS50FW.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CMS50FWRelay_v2.iml" filepath="$PROJECT_DIR$/CMS50FWRelay_v2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms50fwlib/cms50fwlib.iml" filepath="$PROJECT_DIR$/cms50fwlib/cms50fwlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/cms50fwlibtestapp/cms50fwlibtestapp.iml" filepath="$PROJECT_DIR$/cms50fwlibtestapp/cms50fwlibtestapp.iml" />
     </modules>
