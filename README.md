@@ -4,15 +4,15 @@ DISCLAIMER: This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 
 There are two Android Studio modules in this project. One is the android library project "cms50fwlib". The other is a test app named "cms50fwlibtestapp". 
 
-The lib tries to simplify the Android code required to detect the CMS50FW Pulse Oximeter, obtain a bluetooth connection to it, read the data stream, and turn it into a convenient object.
+The cms50fwlib project outputs an aar file. This library tries to simplify the Android code required to detect the <a href="http://www.amazon.com/Acc-bluetooth-enabled-Oximeter-SnugFit/dp/B00LKUHD9K/">CMS50FW Pulse Oximeter</a>, obtain a bluetooth connection to it, read the data stream, and turn it into a convenient object.
 
-The test app reads the data stream in real-time over bluetooth, and tries to alert the end user if it thinks it has detected a problem. 
+The cms50fw test app tries to read the Bluetooth data stream in real-time, writes pulse and oxygen level data to the screen, and also tries to alert the end user if it thinks it has detected a problem (e.g. oxygen level too low). 
 
 ## CMS50FWLib 
 
-The basic steps to using this library are: 
+The basic steps for using the cms50fwlib are:
 
-Implement a custom CMS50FWConnectionListener instance for your app Activity or Fragment.
+Implement a custom CMS50FWConnectionListener instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
 
 Get an instance of the CMS50FWBluetoothConnectionManager: 
 
