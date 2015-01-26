@@ -21,6 +21,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.WindowManager;
 
+/**
+ * This class exists to forward requests to the MainUIFragment, 
+ * and to otherwise make it possible to use a Fragment.
+ * We want to take advantage of the Fragment's ability to 
+ * be retained even when an Activity is stopped or destroyed
+ * by the system during a resource reconfiguration and reload event.
+ */
 public class MainActivity extends ActionBarActivity {
 
     @Override
@@ -28,7 +35,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
         new SimpleEula(this).show(savedInstanceState);
     }
 
