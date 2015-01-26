@@ -16,7 +16,7 @@ Implement a custom CMS50FWConnectionListener instance for your app Activity or F
 
 Get an instance of the CMS50FWBluetoothConnectionManager: 
 
-    cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); // BT name of your CMS50FW 
+    cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); 
 
 Call setCMS50FWConnectionListener on the CMS50FWBluetoothConnectionManager instance, feeding in your custom implementation of CMS50FWConnectionListener: 
 
