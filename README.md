@@ -1,6 +1,7 @@
-DISCLAIMER: This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+## Disclaimer 
+This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  
-# Contents 
+## Contents of this Android Studio project
 
 There are two Android Studio modules in this project. One is the android library project "cms50fwlib". The other is a test app named "cms50fwlibtestapp". 
 
@@ -8,30 +9,30 @@ The cms50fwlib project outputs an aar file. This library tries to simplify the A
 
 The cms50fw test app tries to read the Bluetooth data stream in real-time, writes pulse and oxygen level data to the screen, and also tries to alert the end user if it thinks it has detected a problem (e.g. oxygen level too low). 
 
-## CMS50FWLib 
+### CMS50FWLib 
 
 The basic steps for using the cms50fwlib are:
 
-Implement a custom CMS50FWConnectionListener instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
+1. Implement a custom [CMS50FWConnectionListener](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWConnectionListener.java) instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
 
-Get an instance of the CMS50FWBluetoothConnectionManager: 
+2. Get an instance of the CMS50FWBluetoothConnectionManager: 
+````
+cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); 
+````
+3. Call setCMS50FWConnectionListener on the CMS50FWBluetoothConnectionManager instance, feeding in your custom implementation of CMS50FWConnectionListener: 
+````
+cms50FWBluetoothConnectionManager.setCMS50FWConnectionListener(cms50fwCallbacks);
+````
+4. Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of Context: 
+````
+cms50FWBluetoothConnectionManager.connect(aContextObject) 
+````
 
-    cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); 
-
-Call setCMS50FWConnectionListener on the CMS50FWBluetoothConnectionManager instance, feeding in your custom implementation of CMS50FWConnectionListener: 
-
-    cms50FWBluetoothConnectionManager.setCMS50FWConnectionListener(cms50fwCallbacks);
-
-Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of Context: 
-
-    cms50FWBluetoothConnectionManager.connect(aContextObject) 
-
-
-## CMS50FWLibTestApp 
+### CMS50FWLibTestApp 
 
 The test app can be compiled as part of this Android Studio project or <a href="https://play.google.com/store/apps/details?id=com.albertcbraun.cms50fw.alert">installed directly from the Google Play Store.</a>
 
-# MORE DISCLAIMERS
+## More Disclaimers
 
 This source code is for software testing, entertainment and educational purposes only. This source code is NOT to be used for medical, health care or fitness related purposes. This source code is neither certified nor approved by any government or regulatory agency. 
 
