@@ -15,7 +15,7 @@ The basic steps for using the cms50fwlib are:
 
 1. Implement a custom [CMS50FWConnectionListener](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWConnectionListener.java) instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
 
-2. Get an instance of the CMS50FWBluetoothConnectionManager: 
+2. Get an instance of the [CMS50FWBluetoothConnectionManager](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWBluetoothConnectionManager.java): 
 ````
 cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); 
 ````
@@ -23,7 +23,7 @@ cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO20
 ````
 cms50FWBluetoothConnectionManager.setCMS50FWConnectionListener(cms50fwCallbacks);
 ````
-4. Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of Context: 
+4. Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of [an Android Context object](http://developer.android.com/reference/android/content/Context.html): 
 ````
 cms50FWBluetoothConnectionManager.connect(aContextObject) 
 ````
