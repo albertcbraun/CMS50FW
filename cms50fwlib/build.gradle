@@ -21,7 +21,7 @@ apply plugin: 'maven'
 ext {
     PUBLISH_GROUP_ID = 'com.albertcbraun.cms50fwlib'
     PUBLISH_ARTIFACT_ID = 'cms50fwlib'
-    PUBLISH_VERSION = '0.5.0'
+    PUBLISH_VERSION = '0.5.1'
 }
 
 android {
