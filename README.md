@@ -32,7 +32,9 @@ Once that is done, call connect on the cms50FWBluetoothConnectionManager, feedin
 cms50FWBluetoothConnectionManager.connect(aContextObject) 
 ````
 
-At this point, there will be a delay while the Bluetooth "machinery" on your Android device carries out discovery and tries to find the CMS50FW. Should be 10 seconds or less. If the connection succeeds, you will be called back on your implementation of the method cms50FWBluetoothConnectionManager.onConnectionEstablished. At that point, you can ask the CMS50FW to start streaming data: 
+At this point, there will be a delay while the Bluetooth "machinery" on your Android device carries out discovery and tries to find the CMS50FW. It should take about 10 seconds (or less). 
+
+If the connection succeeds, you will be called back on your implementation of the method cms50FWBluetoothConnectionManager.onConnectionEstablished. Once that has happened, you can ask the CMS50FW to start streaming data: 
 ````
 cms50FWBluetoothConnectionManager.startData()
 ````
