@@ -56,3 +56,14 @@ Manufacturer(s) and retailer(s) of the CMS50FW pulse oximeter do not support, en
 The app author and app publisher accept no responsibility whatsoever for source code bugs, failures, crashes, expected or unexpected behavior. The author of this source code disclaims all liability for its use or abuse.
 
 All responsibility and liability for using this source code belong solely to the user. If you use or in any way rely upon this source code, you agree that you are using it solely at your own risk. 
+
+## Credits 
+
+This library was informed, inspired and guided significantly by Yujia Yan's GitHub project: 
+
+https://github.com/Yujia-Yan/CMS50SerialProtocolKit 
+
+which works on a slightly earlier version of the Contec CMS50. Many kind thanks to Yujia Yan for that code. 
+
+
+
