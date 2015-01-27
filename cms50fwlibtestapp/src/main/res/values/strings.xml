@@ -24,6 +24,6 @@
     <string name="connect_button_label">Please click connect only when CMS50FW has \'Wireless\' set to \'on\' and is within Bluetooth range of this Android device.</string>
     <string name="not_available">N/A</string>
     <string name="minimum_spo2_label_text">Minimum Allowed SpO2 Percentage:</string>
-    <string name="end_user_agreement_message"><b>Please Note:</b> All responsibility and liability for using this app belong solely to the user. If you use or in any way rely upon this app, you agree that you do so at your own risk.</string>
+    <string name="end_user_agreement_message"><b>Please Note:</b> All responsibility and liability for using this app belong solely to the user. If you use or in any way rely upon this app, you agree that you do so at your own risk. Also be aware that heart rate values above 127 bpm are not accurately displayed by this app.</string>
     <string name="i_agree">I Agree</string>
 </resources>
