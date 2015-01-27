@@ -1,6 +1,13 @@
 ## Disclaimer 
 This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  
+ ## Credits 
+This library was informed, inspired and guided significantly by Yujia Yan's GitHub project: 
+
+https://github.com/Yujia-Yan/CMS50SerialProtocolKit 
+
+which works on a slightly earlier version of the Contec CMS50. Many kind thanks to Yujia Yan for that code. Any misunderstandings or misinterpretations belong to me. 
+
 ## Contents of this Android Studio project
 
 There are two Android Studio modules in this project. One is the android library project "cms50fwlib". The other is a test app named "cms50fwlibtestapp". 
@@ -57,13 +64,7 @@ The app author and app publisher accept no responsibility whatsoever for source 
 
 All responsibility and liability for using this source code belong solely to the user. If you use or in any way rely upon this source code, you agree that you are using it solely at your own risk. 
 
-## Credits 
 
-This library was informed, inspired and guided significantly by Yujia Yan's GitHub project: 
-
-https://github.com/Yujia-Yan/CMS50SerialProtocolKit 
-
-which works on a slightly earlier version of the Contec CMS50. Many kind thanks to Yujia Yan for that code. 
 
 
 
