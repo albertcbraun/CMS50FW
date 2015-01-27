@@ -1,7 +1,9 @@
 ## Disclaimer 
+
 This software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  
- ## Credits 
+## Credits 
+
 This library was informed, inspired and guided significantly by Yujia Yan's GitHub project: 
 
 https://github.com/Yujia-Yan/CMS50SerialProtocolKit 
