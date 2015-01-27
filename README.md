@@ -34,11 +34,13 @@ cms50FWBluetoothConnectionManager.connect(aContextObject)
 
 At this point, there will be a delay while the Bluetooth "machinery" on your Android device carries out discovery and tries to find the CMS50FW. It should take about 10 seconds (or less). 
 
-If the connection succeeds, you will be called back on your implementation of the method cms50FWBluetoothConnectionManager.onConnectionEstablished. Once that has happened, you can ask the CMS50FW to start streaming data: 
+If the connection succeeds, you will be called back on your implementation of the method CMS50FWConnectionListener.onConnectionEstablished. 
+
+Once that has happened, you can ask the CMS50FW to start streaming data: 
 ````
 cms50FWBluetoothConnectionManager.startData()
 ````
-You should start to see callbacks about 60 times per second on your implementation of the method CMS50FWConnectionListener.onDataFrameArrived. The cms50fwlib library feeds onDataFrameArrived a [DataFrame](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/DataFrame.java) object each time. 
+You should start to see callbacks about 60 times per second on your implementation of the method CMS50FWConnectionListener.onDataFrameArrived. The cms50fwlib library feeds onDataFrameArrived a convenient  [DataFrame](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/DataFrame.java) object whose properties can be read in your client. 
 
 
 ### CMS50FWLibTestApp 
