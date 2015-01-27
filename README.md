@@ -13,20 +13,26 @@ The cms50fw test app tries to read the Bluetooth data stream in real-time, write
 
 The basic steps for using the cms50fwlib are:
 
-1. Implement a custom [CMS50FWConnectionListener](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWConnectionListener.java) instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
-
-2. Get an instance of the [CMS50FWBluetoothConnectionManager](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWBluetoothConnectionManager.java): 
+Implement a custom [CMS50FWConnectionListener](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWConnectionListener.java) instance for your app Activity or Fragment. (An example of this is found in the test app project.) 
+Get an instance of the [CMS50FWBluetoothConnectionManager](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/CMS50FWBluetoothConnectionManager.java): 
 ````
 cms50FWBluetoothConnectionManager = new CMS50FWBluetoothConnectionManager("SpO202"); 
 ````
-3. Call setCMS50FWConnectionListener on the CMS50FWBluetoothConnectionManager instance, feeding in your custom implementation of CMS50FWConnectionListener: 
+Call setCMS50FWConnectionListener on the CMS50FWBluetoothConnectionManager instance, feeding in your custom implementation of CMS50FWConnectionListener: 
 ````
 cms50FWBluetoothConnectionManager.setCMS50FWConnectionListener(cms50fwCallbacks);
 ````
-4. Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of [an Android Context object](http://developer.android.com/reference/android/content/Context.html): 
+Call connect on the cms50FWBluetoothConnectionManager, feeding it an instance of [an Android Context object](http://developer.android.com/reference/android/content/Context.html): 
 ````
 cms50FWBluetoothConnectionManager.connect(aContextObject) 
 ````
+At this point, there will be a delay. But if the connection succeeds, you will be called back on your implementation of the method cms50FWBluetoothConnectionManager.onConnectionEstablished. At that point, you should be able to call startData on the cms50FWBluetoothConnectionManager: 
+````
+cms50FWBluetoothConnectionManager.startData()
+````
+and start being called back about 60 times per second on your implementation of the method CMS50FWConnectionListener.onDataFrameArrived. Each call of this method gives you a [DataFrame](https://github.com/albertcbraun/CMS50FW/blob/master/cms50fwlib/src/main/java/com/albertcbraun/cms50fwlib/DataFrame.java) object. 
+
+
 
 ### CMS50FWLibTestApp 
 
