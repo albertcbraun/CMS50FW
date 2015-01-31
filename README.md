@@ -59,6 +59,12 @@ You should start to see callbacks about 60 times per second on your implementati
 
 The test app can be compiled as part of this Android Studio project or <a href="https://play.google.com/store/apps/details?id=com.albertcbraun.cms50fw.alert">installed directly from the Google Play Store.</a>
 
+## jCenter Reference
+You can get the cms50fwlib directly from the jCenter repository. Add this to your Android Studio project's build.gradle: 
+````
+compile(group: 'com.albertcbraun.cms50fwlib', name: 'cms50fwlib', version: '0.5.1')
+````
+
 ## More Disclaimers
 
 This source code is for software testing, entertainment and educational purposes only. This source code is NOT to be used for medical, health care or fitness related purposes. This source code is neither certified nor approved by any government or regulatory agency. 
