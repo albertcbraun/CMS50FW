@@ -17,7 +17,7 @@ which works on a slightly earlier version of the Contec CMS50. Many kind thanks 
 
 There are two Android Studio modules in this project. One is the android library project "cms50fwlib". The other is a test app named "cms50fwlibtestapp". 
 
-The cms50fwlib project outputs an aar file. This library tries to simplify the Android code required to detect the <a href="http://www.amazon.com/Acc-bluetooth-enabled-Oximeter-SnugFit/dp/B00LKUHD9K/">CMS50FW Pulse Oximeter</a>, obtain a bluetooth connection to it, read the data stream, and turn it into a convenient object.
+The cms50fwlib project outputs an aar file. This library tries to simplify the Android code required to detect the <a href="https://www.google.com/search?q=CMS50FW+Pulse+Oximeter#q=CMS50FW+Pulse+Oximeter&safe=off&tbm=shop">CMS50FW Pulse Oximeter</a>, obtain a bluetooth connection to it, read the data stream, and turn it into a convenient object.
 
 The cms50fw test app tries to read the Bluetooth data stream in real-time, writes pulse and oxygen level data to the screen, and also tries to alert the end user if it thinks it has detected a problem (e.g. oxygen level too low). 
 
